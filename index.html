@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Table Maker: HTML, CSS, and Javascript Example </title>
+    <meta charset="UTF-8">
+    <script src="javascripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  </head>
+
+  <body>
+
+    <h3> Please input two positive ranges of numbers. </h3>
+    <h3> All non-number inputs will be treated as zero. </h3>
+    <form id="Form" action="javascript:void(0)">
+
+      <h3> Minimum Row Index.   
+        <input type="number" id="minRow" tabindex="1" />
+      </h3>  
+	  
+      <h3> Maximum Row Index.   
+        <input type="number" id="maxRow" tabindex="2" />
+      </h3>
+      
+	  <h2 hidden id="error1" > This is not a positive range. <h2>
+	  
+      <h3> Minimum Column Index.   
+        <input type="number" id="minColumn" tabindex="3" />
+      </h3>
+	  
+      <h3> Maximum Column Index.   
+        <input type="number" id="maxColumn" tabindex="4" />
+      </h3>
+	  
+	  <h2 hidden id="error2" > This is not a positive range. <h2>
+      
+      <button type="button" onclick="makeTable()">Make Table</button>
+    </form>
+
+  </body>
+</html>
